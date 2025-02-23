@@ -1,0 +1,1112 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='loandata_cleaned' inline='true' name='federated.0k9vui51rbb7oo11nybj71th55ok' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='loandata_cleaned' name='textscan.0fpkwy104csded1fiy9h0054kc4r'>
+            <connection class='textscan' directory='/Users/annahan/Documents/GitHub/learning-fuze/loan_dataset/Data' filename='loandata_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0fpkwy104csded1fiy9h0054kc4r' name='loandata_cleaned.csv' table='[loandata_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Loan ID' ordinal='0' />
+            <column datatype='string' name='Loan Status' ordinal='1' />
+            <column datatype='integer' name='Current Loan Amount' ordinal='2' />
+            <column datatype='string' name='Term' ordinal='3' />
+            <column datatype='real' name='Credit Score' ordinal='4' />
+            <column datatype='string' name='Years in current job' ordinal='5' />
+            <column datatype='string' name='Home Ownership' ordinal='6' />
+            <column datatype='real' name='Annual Income' ordinal='7' />
+            <column datatype='string' name='Purpose' ordinal='8' />
+            <column datatype='real' name='Monthly Debt' ordinal='9' />
+            <column datatype='real' name='Years of Credit History' ordinal='10' />
+            <column datatype='real' name='Months since last delinquent' ordinal='11' />
+            <column datatype='integer' name='Number of Open Accounts' ordinal='12' />
+            <column datatype='integer' name='Number of Credit Problems' ordinal='13' />
+            <column datatype='integer' name='Current Credit Balance' ordinal='14' />
+            <column datatype='integer' name='Maximum Open Credit' ordinal='15' />
+            <column datatype='real' name='Bankruptcies' ordinal='16' />
+            <column datatype='real' name='Tax Liens' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Loan ID]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Loan ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Loan Status]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Loan Status</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Loan Amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Current Loan Amount]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Current Loan Amount</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Term</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Term]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Term</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Credit Score]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Credit Score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years in current job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Years in current job]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Years in current job</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Home Ownership</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Home Ownership]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Home Ownership</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual Income]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Annual Income</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Purpose</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Purpose]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Purpose</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly Debt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Monthly Debt]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Monthly Debt</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years of Credit History</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Years of Credit History]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Years of Credit History</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months since last delinquent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Months since last delinquent]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Months since last delinquent</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Open Accounts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Open Accounts]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Number of Open Accounts</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Credit Problems</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Credit Problems]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Number of Credit Problems</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Credit Balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Current Credit Balance]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Current Credit Balance</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Maximum Open Credit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Maximum Open Credit]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Maximum Open Credit</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bankruptcies</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bankruptcies]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Bankruptcies</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tax Liens</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tax Liens]</local-name>
+            <parent-name>[loandata_cleaned.csv]</parent-name>
+            <remote-alias>Tax Liens</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='Months since last delinquent (copy)' datatype='real' name='[Months since last delinquent (copy)_1859423746497372160]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Months since last delinquent]' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Number of Open Accounts (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Number of Open Accounts]' peg='0' size='5.3' />
+      </column>
+      <column datatype='integer' name='[Number of Open Accounts]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Years of Credit History (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Years of Credit History]' peg='0' size='2.13' />
+      </column>
+      <column datatype='real' name='[Years of Credit History]' role='measure' type='quantitative' />
+      <column caption='loandata_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/bh/crnltg950_n8l07mfm97qdtc0000gn/T/tableau-temp/#TableauTemp_00yutjr0blic051d9zxeg0n022zj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/23/2025 08:39:13 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Loan ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Loan ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loan ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64497</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Loan Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Loan Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loan Status</remote-alias>
+              <ordinal>1</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Current Loan Amount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Current Loan Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Current Loan Amount</remote-alias>
+              <ordinal>2</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19638</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Term</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Term]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Term</remote-alias>
+              <ordinal>3</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Credit Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Credit Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Credit Score</remote-alias>
+              <ordinal>4</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>209</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years in current job</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Years in current job]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years in current job</remote-alias>
+              <ordinal>5</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Home Ownership</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Home Ownership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Home Ownership</remote-alias>
+              <ordinal>6</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Annual Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Annual Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Annual Income</remote-alias>
+              <ordinal>7</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26031</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Purpose</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Purpose]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Purpose</remote-alias>
+              <ordinal>8</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Monthly Debt</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Monthly Debt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Monthly Debt</remote-alias>
+              <ordinal>9</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61220</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years of Credit History</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Years of Credit History]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years of Credit History</remote-alias>
+              <ordinal>10</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>832</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Months since last delinquent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Months since last delinquent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Months since last delinquent</remote-alias>
+              <ordinal>11</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Open Accounts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Open Accounts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Open Accounts</remote-alias>
+              <ordinal>12</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Credit Problems</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Credit Problems]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Credit Problems</remote-alias>
+              <ordinal>13</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Current Credit Balance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Current Credit Balance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Current Credit Balance</remote-alias>
+              <ordinal>14</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23213</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Maximum Open Credit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Maximum Open Credit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Maximum Open Credit</remote-alias>
+              <ordinal>15</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34724</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bankruptcies</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Bankruptcies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bankruptcies</remote-alias>
+              <ordinal>16</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tax Liens</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Tax Liens]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tax Liens</remote-alias>
+              <ordinal>17</ordinal>
+              <family>loandata_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='loandata_cleaned.csv' id='loandata_cleaned.csv_BF08322409524C77801F2C501AF2FD63'>
+            <properties context=''>
+              <relation connection='textscan.0fpkwy104csded1fiy9h0054kc4r' name='loandata_cleaned.csv' table='[loandata_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Loan ID' ordinal='0' />
+                  <column datatype='string' name='Loan Status' ordinal='1' />
+                  <column datatype='integer' name='Current Loan Amount' ordinal='2' />
+                  <column datatype='string' name='Term' ordinal='3' />
+                  <column datatype='real' name='Credit Score' ordinal='4' />
+                  <column datatype='string' name='Years in current job' ordinal='5' />
+                  <column datatype='string' name='Home Ownership' ordinal='6' />
+                  <column datatype='real' name='Annual Income' ordinal='7' />
+                  <column datatype='string' name='Purpose' ordinal='8' />
+                  <column datatype='real' name='Monthly Debt' ordinal='9' />
+                  <column datatype='real' name='Years of Credit History' ordinal='10' />
+                  <column datatype='real' name='Months since last delinquent' ordinal='11' />
+                  <column datatype='integer' name='Number of Open Accounts' ordinal='12' />
+                  <column datatype='integer' name='Number of Credit Problems' ordinal='13' />
+                  <column datatype='integer' name='Current Credit Balance' ordinal='14' />
+                  <column datatype='integer' name='Maximum Open Credit' ordinal='15' />
+                  <column datatype='real' name='Bankruptcies' ordinal='16' />
+                  <column datatype='real' name='Tax Liens' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Loan Amount by Purpose'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loandata_cleaned' name='federated.0k9vui51rbb7oo11nybj71th55ok' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0k9vui51rbb7oo11nybj71th55ok'>
+            <column datatype='integer' name='[Current Loan Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Loan Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Purpose]' role='dimension' type='nominal' />
+            <column-instance column='[Loan Status]' derivation='None' name='[none:Loan Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Purpose]' derivation='None' name='[none:Purpose:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Current Loan Amount]' derivation='Sum' name='[sum:Current Loan Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Purpose:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0k9vui51rbb7oo11nybj71th55ok].[sum:Current Loan Amount:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' />
+              <text column='[federated.0k9vui51rbb7oo11nybj71th55ok].[sum:Current Loan Amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='off' />
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Purpose:nk]</rows>
+        <cols>[federated.0k9vui51rbb7oo11nybj71th55ok].[sum:Current Loan Amount:qk]</cols>
+      </table>
+      <simple-id uuid='{AF27AC34-C153-464F-916A-A79CDC3F97DE}' />
+    </worksheet>
+    <worksheet name='Months Since Delinquent'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loandata_cleaned' name='federated.0k9vui51rbb7oo11nybj71th55ok' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0k9vui51rbb7oo11nybj71th55ok'>
+            <column datatype='string' name='[Loan Status]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Months since last delinquent]' role='measure' type='quantitative' />
+            <column-instance column='[Months since last delinquent]' derivation='Count' name='[cnt:Months since last delinquent:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Loan Status]' derivation='None' name='[none:Loan Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Months since last delinquent]' derivation='None' name='[none:Months since last delinquent:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0k9vui51rbb7oo11nybj71th55ok].[cnt:Months since last delinquent:qk]</rows>
+        <cols>[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Months since last delinquent:ok]</cols>
+      </table>
+      <simple-id uuid='{2FE95843-029D-4BE1-9A71-3678227A5AD4}' />
+    </worksheet>
+    <worksheet name='Num_Accounts vs Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loandata_cleaned' name='federated.0k9vui51rbb7oo11nybj71th55ok' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0k9vui51rbb7oo11nybj71th55ok'>
+            <column datatype='string' name='[Loan Status]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='integer' name='[Number of Open Accounts (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Number of Open Accounts]' peg='0' size='5.3' />
+            </column>
+            <column datatype='integer' name='[Number of Open Accounts]' role='measure' type='quantitative' />
+            <column-instance column='[Loan Status]' derivation='Attribute' name='[attr:Loan Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Open Accounts]' derivation='Count' name='[cnt:Number of Open Accounts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Loan Status]' derivation='None' name='[none:Loan Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Open Accounts (bin)]' derivation='None' name='[none:Number of Open Accounts (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0k9vui51rbb7oo11nybj71th55ok].[attr:Loan Status:nk]'>
+            <groupfilter function='level-members' level='[attr:Loan Status:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0k9vui51rbb7oo11nybj71th55ok].[attr:Loan Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0k9vui51rbb7oo11nybj71th55ok].[cnt:Number of Open Accounts:qk]</rows>
+        <cols>[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Number of Open Accounts (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0k9vui51rbb7oo11nybj71th55ok].[Number of Open Accounts (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{138B6C14-D7AE-4A05-8F10-F9D8E1CE805C}' />
+    </worksheet>
+    <worksheet name='Tax Liens &amp; Bankruptices'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loandata_cleaned' name='federated.0k9vui51rbb7oo11nybj71th55ok' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0k9vui51rbb7oo11nybj71th55ok'>
+            <column datatype='real' name='[Bankruptcies]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Loan Status]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Tax Liens]' role='measure' type='quantitative' />
+            <column-instance column='[Bankruptcies]' derivation='None' name='[none:Bankruptcies:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Loan Status]' derivation='None' name='[none:Loan Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tax Liens]' derivation='Sum' name='[sum:Tax Liens:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' />
+              <text column='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Bankruptcies:qk]</rows>
+        <cols>[federated.0k9vui51rbb7oo11nybj71th55ok].[sum:Tax Liens:qk]</cols>
+      </table>
+      <simple-id uuid='{6A6AFA1E-1F88-46D6-A825-60CA9108D437}' />
+    </worksheet>
+    <worksheet name='Years History vs Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loandata_cleaned' name='federated.0k9vui51rbb7oo11nybj71th55ok' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0k9vui51rbb7oo11nybj71th55ok'>
+            <column datatype='string' name='[Loan Status]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='integer' name='[Years of Credit History (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Years of Credit History]' peg='0' size='2.13' />
+            </column>
+            <column datatype='real' name='[Years of Credit History]' role='measure' type='quantitative' />
+            <column-instance column='[Years of Credit History]' derivation='Count' name='[cnt:Years of Credit History:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Loan Status]' derivation='None' name='[none:Loan Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Years of Credit History (bin)]' derivation='None' name='[none:Years of Credit History (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0k9vui51rbb7oo11nybj71th55ok].[cnt:Years of Credit History:qk]</rows>
+        <cols>[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Years of Credit History (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0k9vui51rbb7oo11nybj71th55ok].[Years of Credit History (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{D4C1C880-585A-4AEB-9A02-19AC1D3E67E2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Loan Status Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='loandata_cleaned' name='federated.0k9vui51rbb7oo11nybj71th55ok' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0k9vui51rbb7oo11nybj71th55ok'>
+        <column datatype='string' name='[Loan Status]' role='dimension' type='nominal' />
+        <column-instance column='[Loan Status]' derivation='Attribute' name='[attr:Loan Status:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98024' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='988'>
+            <zone h='98024' id='5' type-v2='layout-basic' w='89702' x='468' y='988'>
+              <zone h='49012' id='9' name='Loan Amount by Purpose' w='29899' x='468' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49012' id='10' name='Num_Accounts vs Status' w='31657' x='58513' y='988'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49012' id='12' name='Years History vs Status' w='29902' x='60268' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49012' id='13' name='Months Since Delinquent' w='58045' x='468' y='988'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49012' id='3' name='Tax Liens &amp; Bankruptices' w='29901' x='30367' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98024' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='988'>
+              <zone h='8148' id='8' name='Tax Liens &amp; Bankruptices' pane-specification-id='0' param='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' type-v2='color' w='9362' x='90170' y='988'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='15679' id='11' name='Num_Accounts vs Status' param='[federated.0k9vui51rbb7oo11nybj71th55ok].[attr:Loan Status:nk]' type-v2='filter' w='9362' x='90170' y='9136'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{78FCE7C7-BAB2-4FCC-ADD8-47EFF6D2365C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Num_Accounts vs Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0k9vui51rbb7oo11nybj71th55ok].[attr:Loan Status:nk]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{18A5CC63-BC9D-4E66-B218-2EA1D7D8F4D7}' />
+    </window>
+    <window class='worksheet' name='Years History vs Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7B8FC120-8284-427F-B102-F88C2A867204}' />
+    </window>
+    <window class='worksheet' name='Loan Amount by Purpose'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{8FC1F3C8-FD90-44AA-8FF0-69B4B9C28067}' />
+    </window>
+    <window class='worksheet' name='Months Since Delinquent'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A4574FDA-5B79-4960-8A08-C06DC4009D5E}' />
+    </window>
+    <window class='worksheet' name='Tax Liens &amp; Bankruptices'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0k9vui51rbb7oo11nybj71th55ok].[none:Loan Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E3F9E462-E578-40CA-B26F-63521B24B029}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Loan Status Dashboard'>
+      <viewpoints>
+        <viewpoint name='Loan Amount by Purpose' />
+        <viewpoint name='Months Since Delinquent'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Num_Accounts vs Status'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tax Liens &amp; Bankruptices'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Years History vs Status'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{61AD4943-BD04-4763-9614-1A8401F1DF48}' />
+    </window>
+  </windows>
+</workbook>
