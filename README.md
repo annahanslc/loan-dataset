@@ -1,5 +1,7 @@
 # loan-dataset
 
+Project Objective:
+
 Next Steps:
 
 - Rather than relying on the RobustScaler to address all the outliers, see if removing them via a standard deviation-based threshold will improve model accuracy.
