@@ -15,11 +15,15 @@
 
 ## 🗂️ Project Files
 
-Project Files are located in the Main Folder, and include the following:
+The following project files are located in the main directory:
 
 1_EDA.ipynb (details the EDA process)
-2_Preprocessing.ipynb (contains the code for data cleaning and preprocessing pipeline)
-3_Analysis.ipynb  (analysis on two sets of charts)
+
+2_Preprocessing.ipynb (contains data cleaning and preprocessing pipeline)
+
+3_Analysis.ipynb  (analysis on two sets of visuals)
+
+
 
 ## 🧭 Exploratory Data Analysis
  - Each feature was explored for completeness, variability, inconsistencies, patterns, outliers, bad values, and anything else of significance.
