@@ -13,7 +13,7 @@
 4. [Explanatory Analysis](#-explanatory-analysis)
 5. [Next Steps](#-next-steps)
 
-## 🗂️ Project Files
+## 📁 Project Files
 
 The following project files are located in the main directory:
 
