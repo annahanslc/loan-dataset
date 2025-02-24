@@ -8,9 +8,9 @@
 
 ## 📖 Directory
   [1. Exploratory Data Analysis](#-exploratory-data-analysis)
-  2. Preprocessing
-  3. Explanatory Analysis
-  4. Next Steps
+  [2. Preprocessing](#-preprocessing)
+  [3. Explanatory Analysis](#-explanatory-analysis)
+  [4. Next Steps](#-next-steps)
 
 ## 🧭 Exploratory Data Analysis
  - Each feature was explored for completeness, variability, inconsistencies, patterns, outliers, bad values, and anything else of significance.
