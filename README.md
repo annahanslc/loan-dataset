@@ -7,12 +7,12 @@
 - Using this dataset, I hope to capture the indicators that best predict if a borrower will pay off their loan, or default.
 
 ## 📖 Directory
-  [1. Exploratory Data Analysis](#exploratory-data-analysis)
+  [1. Exploratory Data Analysis](#-exploratory-data-analysis)
   2. Preprocessing
   3. Explanatory Analysis
   4. Next Steps
 
-## Exploratory Data Analysis
+## 🧭 Exploratory Data Analysis
  - Each feature was explored for completeness, variability, inconsistencies, patterns, outliers, bad values, and anything else of significance.
 
   1. **Loan ID:** every loan has a unique loan ID, so this feature should contain only unique values. However, there were 22,197 duplicates that need to be addressed. After dropping all duplicates where the rows matched 100%, there were still more duplicates within the Loan ID column. These duplicates will be addressed throughout the rest of the EDA process, and by the end of data cleaning, no duplicates remained. 
