@@ -58,7 +58,19 @@
   19. **Tax Liens** use One Hot Encoder to encode the binary feature, and drop second column.
 
 ## 📈 Explanatory Analysis
- 
+ ![LoanStatusDashboard](https://github.com/user-attachments/assets/021778a7-7786-4dad-bdcf-984014f8e0fb)
+
+The charts above display Loan Status from the perspective of different features, with the goal of visualizing any patterns or correlations. Blue portions indicate loans that defaulted, while Orange indicate loans that were fully paid off. 
+
+The top left diagram show loan status along the range of "Months since last delinquent". The assumptions was that the more recent a borrower was delinquent on their payment, the more likely that they would default on their loan. The resulting chart, however, does not show any obvious increase in the portion of loans that defaulted on the left end of the x-axis. This seems to indicate that, contrary to my assumption, there is a not a significant correlation between the number of months since last delinquent with Loan Status. However, in EDA, it was determined that Months since last Delinquent would be transformed into the binary feature "Ever Delinquent", this feature may reveal additional information. 
+
+The top right diagram depicts loan status for different number of open accounts. Again, there does not appear to be much difference in the portion of defaulted loans at each step of the histogram.
+
+The lower left diagram shows loan status based on the purpose of the loan. Debt Consolidation is by far, the most common purpose for the loan. It also appears that the portion of defaulted loan is the highest for this category. During pre-processing, this feature was transformed into binary where it indicates if the loan was for Debt Consolidation or not. This new feature may reveal additional insight.
+
+The lower middle diagram creates a two-dimensional plane between Tax Liens and Bankruptcies. As we know that these two features are correlated, it amplifies the effect of "Poor Financial History" on loan status. We can clearly see that Blue portion (defaulted) increases on the ends of the axes. This means that both are positively correlated with loan default.
+
+The lower right chart show increasing years of credit history, and the portion of defaulted loans on that spectrum. There does seem to be a general trend of lower rates of loan default as the number of years of credit history increases.
 
 
 ## 🥾 Next Steps
